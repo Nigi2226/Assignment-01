@@ -380,7 +380,7 @@ body {
     background-color: #4E47FF;
     color: white;
     border: none;
-    padding: 12px 25px;
+    padding: 12px 245px;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -431,7 +431,7 @@ body {
 
 /* BUTTON ANIMATION STYLES */
 
-/* Base Button Styles (applies to all buttons) */
+
 button {
     position: relative;
     overflow: hidden;
@@ -440,7 +440,7 @@ button {
     backface-visibility: hidden;
 }
 
-/* Glow/Ripple Effect */
+/* Glow Effect */
 button::after {
     content: "";
     position: absolute;
@@ -458,8 +458,7 @@ button:hover::after {
     opacity: 1;
 }
 
-/* Specific Button Types */
-/* Primary Buttons (Green) */
+
 .signup-btn,
 .focus-btn,
 .launch-btn,
@@ -494,7 +493,7 @@ button:active {
     }
 }
 
-/* Button Special Effect */
+
 /* Sign Up Button */
 .signup-btn:hover {
     background-color: #4E47FF;
@@ -519,3 +518,4 @@ button:active {
 .focus-btn:hover {
     background-color: #4E47FF;
 }
+/*for the button hover part took help from AI*/
