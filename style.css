@@ -1,0 +1,511 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    color: #ffffff;
+    background-color: #121212;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.signup-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Banner Styles */
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('banner-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.focus-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.focus-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Action Section Styles */
+.action {
+    padding: 80px 0;
+}
+
+.action .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.action-content {
+    flex: 1;
+}
+
+.action-image {
+    flex: 1;
+}
+
+.action h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.action p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.launch-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.launch-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.small-text {
+    font-size: 0.9rem;
+    color: #aaaaaa;
+}
+
+.image-placeholder {
+    height: 400px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+/* Productive Users Section */
+.productive-users {
+    background-color: #1a1a1a;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.productive-users h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    margin: 20px;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.stat-label {
+    font-size: 1.2rem;
+    color: #aaaaaa;
+}
+/* Users Feedback Section */
+.users-feedback {
+    padding: 80px 0;
+    background-color: #1a1a1a;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+.testimonials {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background-color: #252525;
+    border-radius: 10px;
+    padding: 30px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.testimonial-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.testimonial-text {
+    color: #aaaaaa;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.reviewer-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333;
+    background-image: linear-gradient(135deg, #444 0%, #666 100%);
+}
+
+.reviewer-name {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.review-date {
+    color: #777777;
+    font-size: 0.9rem;
+}
+/* Focus Better Section */
+.focus-better {
+    background-color: #252525;
+    padding: 150px 0;
+    border-radius: 14px;
+    margin: 80px auto;
+    max-width: 1200px;
+}
+
+.focus-content {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.focus-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.focus-subtitle {
+    font-size: 1.2rem;
+    color: #aaaaaa;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.focus-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.focus-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.focus-image {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.focus-image .image-placeholder {
+    height: 400px;
+    background-color: #333;
+    background-image: linear-gradient(135deg, #333 0%, #555 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 1.2rem;
+}
+/* Contact Section Styles */
+.contact {
+    padding: 80px 0;
+}
+
+.contact .container {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-title {
+    flex: 1;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #222;
+    color: white;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #1a1a1a;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #aaaaaa;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #4CAF50;
+}
+/* ====================== */
+/* BUTTON ANIMATION STYLES */
+/* ====================== */
+
+/* Base Button Styles (applies to all buttons) */
+button {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* Glow/Ripple Effect */
+button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+button:hover::after {
+    opacity: 1;
+}
+
+/* Specific Button Types */
+/* Primary Buttons (Green) */
+.signup-btn,
+.focus-btn,
+.launch-btn,
+.contact-btn,
+.focus-btn {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.signup-btn:hover,
+.focus-btn:hover,
+.launch-btn:hover,
+.contact-btn:hover,
+.focus-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Pulse Animation on Click */
+button:active {
+    animation: pulse 0.4s ease;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateY(-3px) scale(1.02);
+    }
+    50% {
+        transform: translateY(-3px) scale(0.98);
+    }
+    100% {
+        transform: translateY(-3px) scale(1.02);
+    }
+}
+
+/* Button Special Effect */
+/* Sign Up Button */
+.signup-btn:hover {
+    background-color: #3d8b40;
+}
+
+/* Focus Button */
+.focus-btn:hover {
+    background-color: #3d8b40;
+}
+
+/* Launch Preview Button */
+.launch-btn:hover {
+    background-color: #3d8b40;
+}
+
+/* Contact Button */
+.contact-btn:hover {
+    background-color: #3d8b40;
+}
+
+/* Get Started Free Button */
+.focus-btn:hover {
+    background-color: #3d8b40;
+}
